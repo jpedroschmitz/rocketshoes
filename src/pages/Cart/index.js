@@ -18,19 +18,26 @@ function Cart({ cart, total, removeFromCart, updateAmount }) {
 
   return (
     <Container>
-      <ProductTable
-        cart={cart}
-        increment={increment}
-        decrement={decrement}
-        removeFromCart={removeFromCart}
-      />
-      <footer>
-        <button type="button">Finalizar pedido</button>
-        <Total>
-          <span>Total</span>
-          <strong>{total}</strong>
-        </Total>
-      </footer>
+      {cart.length > 0 ? (
+        <>
+          <ProductTable
+            cart={cart}
+            increment={increment}
+            decrement={decrement}
+            removeFromCart={removeFromCart}
+          />
+
+          <footer>
+            <button type="button">Finalizar pedido</button>
+            <Total>
+              <span>Total</span>
+              <strong>{total}</strong>
+            </Total>
+          </footer>
+        </>
+      ) : (
+        <h4>Não há produtos no carrinho...</h4>
+      )}
     </Container>
   );
 }
