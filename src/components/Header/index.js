@@ -2,15 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { Container, Cart, ShoppingIcon } from './styles';
+import logo from '../../assets/images/logo.svg';
 
 function Header({ cartSize }) {
   return (
     <Container>
       <Link to="/">
-        <img
-          src="https://app.rocketseat.com.br/api/files/1562597403849.svg"
-          alt="Rocketshoes"
-        />
+        <img src={logo} alt="Rocketshoes" />
       </Link>
 
       <Cart to="/cart">
