@@ -47,7 +47,7 @@ export default function Cart() {
           />
 
           <footer>
-            <button type="button">Finalizar pedido</button>
+            <button type="button">Proceed to payment</button>
             <Total>
               <span>Total</span>
               <strong>{total}</strong>
@@ -55,7 +55,7 @@ export default function Cart() {
           </footer>
         </>
       ) : (
-        <h4>Não há produtos no carrinho...</h4>
+        <h4>No products in the cart...</h4>
       )}
     </Container>
   );

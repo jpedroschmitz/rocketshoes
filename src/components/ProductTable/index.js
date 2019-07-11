@@ -18,8 +18,8 @@ export default function ProductTable({
       <thead>
         <tr>
           <th />
-          <th>Produto</th>
-          <th>Qtd</th>
+          <th>Product</th>
+          <th>Quantity</th>
           <th>Subtotal</th>
           <th />
         </tr>
