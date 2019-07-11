@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Table = styled.table`
   width: 100%;
+  overflow: scroll;
 
   thead th {
     color: #999;
